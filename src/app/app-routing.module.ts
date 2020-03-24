@@ -1,3 +1,4 @@
+import { NotfoundComponent } from './notfound/notfound.component';
 import { ArticleComponent } from './article/article.component';
 import { BlogComponent } from './blog/blog.component';
 import { NgModule } from '@angular/core';
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'Pricing', component: PricingComponent},
   {path: 'Blog', component: BlogComponent},
   {path: 'Article/:id', component: ArticleComponent},
-
+  {path: '404', component: NotfoundComponent},
+  {path: '**', redirectTo: '/404'},
 ];
 
 @NgModule({
