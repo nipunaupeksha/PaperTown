@@ -1,3 +1,5 @@
+import { isLoweredSymbol } from '@angular/compiler';
+
 export const configuration = {
     header: {
         heading: 'Paper Town',
@@ -101,5 +103,32 @@ export const configuration = {
      {title: 'Twitter', target: '_blank', username: 'nipunaupeksha', icon: 'twitter', link: 'https://www.twitter.com/'  },
      {title: 'Instagram', target: '_blank', username: 'nipunaupeksha', icon: 'instagram', link: 'https://www.instagram.com/'  },
      {title: 'behance', target: '_blank', username: 'nipunaupeksha', icon: 'behance', link: 'https://www.behance.net/'  },
-    ]
+    ],
+    blog: {
+        tagline: 'THOUGHTS',
+        title: 'Thoughts Become Things ...',
+        posts: [
+            // tslint:disable-next-line: max-line-length
+            {id: 1, title: 'The First Article', author: 'John Green', image: 'gallery-image-1.jpg', publishdate: '2019-12-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 2, title: 'The Second Article', author: 'Nora Roberts', image: 'gallery-image-2.jpg', publishdate: '2019-06-26T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 3, title: 'The Third Article', author: 'Dan Brown', image: 'gallery-image-3.jpg', publishdate: '2019-01-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 4, title: 'The Fourth Article', author: 'Gerald Seymour', image: 'gallery-image-4.jpg', publishdate: '2019-02-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 5, title: 'The Fifth Article', author: 'Rebecca Culas', image: 'gallery-image-5.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 6, title: 'The Sixth Article', author: 'Rebecca Culas', image: 'gallery-image-6.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 7, title: 'The Seventh Article', author: 'Rebecca Culas', image: 'gallery-image-1.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 8, title: 'The Eigth Article', author: 'Rebecca Culas', image: 'gallery-image-2.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 9, title: 'The Ninth Article', author: 'Rebecca Culas', image: 'gallery-image-4.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+            // tslint:disable-next-line: max-line-length
+            {id: 10, title: 'The Tenth Article', author: 'Rebecca Culas', image: 'gallery-image-6.jpg', publishdate: '2019-03-23T18:25Z', excert: 'Labore dolor ex aliqua non ex esse mollit officia commodo exercitation irure. ' },
+
+        ]
+    },
 };

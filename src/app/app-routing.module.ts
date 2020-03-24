@@ -1,3 +1,5 @@
+import { ArticleComponent } from './article/article.component';
+import { BlogComponent } from './blog/blog.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IntroComponent } from './intro/intro.component';
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path: 'Services', component: ContentComponent },
   {path: 'Testimonials', component: TestimonialComponent },
   {path: 'Clients', component: ClientsComponent },
-  {path: 'Pricing', component: PricingComponent}
+  {path: 'Pricing', component: PricingComponent},
+  {path: 'Blog', component: BlogComponent},
+  {path: 'Article/:id', component: ArticleComponent},
 
 ];
 

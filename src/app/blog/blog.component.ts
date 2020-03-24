@@ -1,3 +1,4 @@
+import { ConfigService } from './../config.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-
-  constructor() { }
+  blog = {};
+  constructor(private config: ConfigService) { }
 
   ngOnInit(): void {
+    this.blog = this.getBlogs();
   }
 
+  getBlogs() {
+    return this.config.getConfig().blog;
+  }
 }
