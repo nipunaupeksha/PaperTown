@@ -13,6 +13,7 @@ export class PricingComponent implements OnInit {
 
   ngOnInit(): void {
     this.pricing = this.getPricing();
+    //
   }
 
   getPricing(){
