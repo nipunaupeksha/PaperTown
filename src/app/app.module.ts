@@ -1,3 +1,4 @@
+import { PagerService } from './pager.service';
 import { ConfigService } from './config.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -43,7 +44,7 @@ import { PaginationComponent } from './pagination/pagination.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ConfigService],
+  providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
